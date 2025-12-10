@@ -1,0 +1,25 @@
+# Rust Target Cleaner Configuration
+# Customize this file to control which paths to ignore and how the cleaner behaves
+
+[ignore]
+# Add directories to ignore during scanning, one per line
+# Example:
+# "/home/user/important_project"
+# "/opt/rust/projects/production"
+paths = []
+[settings]
+# Configure the behavior of the target cleaner
+
+# Whether to run in dry-run mode by default (true = show what would be deleted, false = actually delete)
+# It's recommended to keep this true until you're sure you want to delete files
+dry_run = false
+
+# Verbose output mode (true = show more details, false = concise)
+# verbose = false
+
+[access]
+# Configure how target directories are evaluated based on access time
+
+# How many days before considering a target directory as stale based on last access
+# Default is 7 days, but you can adjust as needed
+lastseen = 30

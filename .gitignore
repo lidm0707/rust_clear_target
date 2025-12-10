@@ -1,0 +1,4 @@
+/target
+
+# Ignore Cleaner.toml to allow per-user configuration
+Cleaner.toml
