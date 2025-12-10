@@ -227,7 +227,13 @@ impl CleanerTUI {
                 self.state.mode = UIMode::Complete;
                 return Ok(());
             }
-
+            KeyEvent {
+                code: KeyCode::Char('q'),
+                ..
+            } => {
+                self.state.mode = UIMode::Complete;
+                return Ok(());
+            }
             _ => {}
         }
         Ok(())
